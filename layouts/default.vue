@@ -1,0 +1,39 @@
+<template>  
+<div>
+    <Navbar />
+    <main class="container p-3 my-5 border rounded">
+        <slot />
+    </main>
+    <Footer />
+</div>
+</template>
+
+<script setup>
+
+useHead({
+    titleTemplate:"%s - Intro Nuxt",
+    bodyAttrs:[
+        {
+            class:"text-center"
+        }       
+    ],
+    link: [
+        {
+            rel:"stylesheet",
+            href:"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css",  
+            integrity:"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC",
+            crossorigin:"anonymous"
+        }
+    ],
+    script:[
+        {
+            src:"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js",
+        }
+    ]
+    })
+
+    
+
+
+</script>
+
